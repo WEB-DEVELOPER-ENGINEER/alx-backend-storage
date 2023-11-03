@@ -58,6 +58,7 @@ def replay(fn: Callable) -> None:
     for input, output in zip(inputs, outputs):
         print(f'{fn.__qualname__}(*{input}) -> {output}')
 
+
 class Cache:
     '''
         Cache class
